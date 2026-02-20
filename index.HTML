@@ -1,1 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RCC | Roller Coaster Creations</title>
+  <meta name="description" content="RCC (Roller Coaster Creations) – Roblox roller coaster design inspired by Cedar Point." />
+  <style>
+    :root {
+      --bg: #0b0f14;
+      --card: #121826;
+      --accent: #ff3b3b;
+      --text: #e6e8ee;
+      --muted: #9aa4b2;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      background: linear-gradient(180deg, #0b0f14, #0e1422 60%, #0b0f14);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    header {
+      padding: 64px 20px 48px;
+      text-align: center;
+      background: radial-gradient(800px 300px at 50% 0%, rgba(255,59,59,.25), transparent);
+    }
+    .logo {
+      font-size: 42px;
+      font-weight: 900;
+      letter-spacing: 1px;
+    }
+    .tag {
+      color: var(--muted);
+      max-width: 760px;
+      margin: 12px auto 0;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 18px;
+      padding: 12px;
+      position: sticky;
+      top: 0;
+      backdrop-filter: blur(8px);
+      background: rgba(11,15,20,.6);
+      border-bottom: 1px solid rgba(255,255,255,.06);
+      z-index: 10;
+    }
+    nav a {
+      color: var(--text);
+      text-decoration: none;
+      font-weight: 600;
+      opacity: .85;
+    }
+    nav a:hover { opacity: 1; color: var(--accent); }
 
+    .container { max-width: 1100px; margin: 0 auto; padding: 28px 20px; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.02));
+      border: 1px solid rgba(255,255,255,.08);
+      border-radius: 16px;
+      padding: 18px;
+      box-shadow: 0 10px 30px rgba(0,0,0,.35);
+    }
+    .card h3 { margin-top: 0; }
+    .pill {
+      display: inline-block;
+      padding: 4px 10px;
+      border-radius: 999px;
+      background: rgba(255,59,59,.15);
+      color: #ffd7d7;
+      font-size: 12px;
+      margin-right: 6px;
+    }
+    .hero-img {
+      width: 100%;
+      height: 260px;
+      border-radius: 18px;
+      background: linear-gradient(135deg, #1a1f2e, #0f1422);
+      display: grid;
+      place-items: center;
+      color: var(--muted);
+      border: 1px dashed rgba(255,255,255,.12);
+    }
+    footer {
+      padding: 36px 20px 60px;
+      color: var(--muted);
+      text-align: center;
+    }
+    .btn {
+      display: inline-block;
+      padding: 12px 18px;
+      border-radius: 12px;
+      background: var(--accent);
+      color: #fff;
+      text-decoration: none;
+      font-weight: 700;
+      box-shadow: 0 10px 24px rgba(255,59,59,.35);
+    }
+    .btn.secondary {
+      background: transparent;
+      border: 1px solid rgba(255,255,255,.18);
+      box-shadow: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">RCC</div>
+    <p class="tag">Roller Coaster Creations — high-detail Roblox coaster design inspired by world-class parks, with a big focus on Cedar Point-style layouts.</p>
+    <div style="margin-top:18px">
+      <a class="btn" href="#projects">View Projects</a>
+      <a class="btn secondary" href="#about" style="margin-left:10px">About RCC</a>
+    </div>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#cedar">Cedar Point Focus</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about" class="container">
+    <h2>About RCC</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>What We Do</h3>
+        <p>RCC builds realistic roller coasters in Roblox using smooth track shaping, accurate pacing, and station systems inspired by real-world operations.</p>
+        <span class="pill">Roblox</span><span class="pill">CFrame</span><span class="pill">Realism</span>
+      </div>
+      <div class="card">
+        <h3>Design Philosophy</h3>
+        <p>Focus on airtime, transitions, and ride flow. Every layout is tested for comfort, excitement, and visual impact.</p>
+      </div>
+      <div class="card">
+        <h3>Custom Systems</h3>
+        <p>Dispatch logic, block zones, and train spacing designed from scratch for flexibility and performance.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="cedar" class="container">
+    <h2>Cedar Point-Style Inspiration</h2>
+    <div class="hero-img">Add photos or renders here (GitHub Pages friendly)</div>
+    <p style="margin-top:14px">Layouts inspired by aggressive lift hills, fast transitions, strong airtime moments, and iconic station designs. The goal is to capture the feeling of riding coasters at the "Roller Coaster Capital" inside Roblox.</p>
+  </section>
+
+  <section id="projects" class="container">
+    <h2>Featured Projects</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Hyper-Style Coaster</h3>
+        <p>Large drops, sustained airtime, and smooth curves designed for speed.</p>
+      </div>
+      <div class="card">
+        <h3>Launch Coaster Concept</h3>
+        <p>Multi-launch layout with tight transitions and near-miss elements.</p>
+      </div>
+      <div class="card">
+        <h3>Classic Corkscrew Tribute</h3>
+        <p>Compact layout inspired by classic Arrow-style coasters.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="container">
+    <h2>Contact / Commissions</h2>
+    <p>Interested in a custom Roblox coaster or collaboration?</p>
+    <ul>
+      <li>Roblox: <strong>YourUsernameHere</strong></li>
+      <li>Discord: <strong>YourTagHere</strong></li>
+      <li>GitHub: <strong>github.com/YourRepo</strong></li>
+    </ul>
+  </section>
+
+  <footer>
+    © <span id="year"></span> Roller Coaster Creations (RCC). Built for GitHub Pages.
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
